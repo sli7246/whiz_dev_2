@@ -1,0 +1,32 @@
+<!-- This sets the header of SwapLingo -->
+<div class="header"><a href="#"><img src="graphics/mainlogo.jpg" alt="logo" name="Insert_logo" width="367" height="100" id="Insert_logo" style="display:block;" /></a> 
+
+<hr noshade size=5 color= #7EC0EE />
+
+	<div id="navcontainer">
+	<ul id="navlist">
+    
+    	<li id="activeli"><a href="default.php" title="Home Page">Home</a></li>
+        
+        <?php 
+            if (isset($_SESSION['LoginMethod']) and  $_SESSION['LoginMethod'] != 'NA') {
+                echo	"<li id='activeli'><a href='profile.php'>Profile</a></li>
+                		<li id='activeli'><a href='#'>Live Chat</a></li>";
+            
+            } else {
+            
+                echo"<li id='disableli'>Profile</li>
+                	 <li id='disableli'>Live Chat</li>";
+            
+            } 
+        ?>
+      
+      	<li id='activeli'><a href="#">About Us</a></li>
+        <li id='activeli'><a href="#">Help/FAQ</a></li>
+      
+	</ul>
+	</div>
+
+<hr noshade size=5 color= #7EC0EE />
+</div> 
+<!-- end .header --> 

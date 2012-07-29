@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	/*background: #42413C;*/
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+ul, ol, dl { 
+	padding: 0;
+	margin: 0;
+}
+
+li {
+		
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+	margin-bottom: 8px;
+	color: #666;
+	padding-right: 15px;
+	padding-left: 15px; 
+}
+
+a img { 
+	border: none;
+}
+
+a:link {
+	color: #42413C;
+	/*text-decoration: underline; */
+}
+
+a:visited {
+	color: #6E6C64;
+	/*text-decoration: underline; */
+}
+
+a:hover, a:active, a:focus { 
+	text-decoration: none;
+}
+fieldset
+{
+	border: none;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+label
+{
+	width: 6em;
+	float: left;
+	text-align: left;
+	margin-right: 0.0em;
+	display: block
+}
+input
+{
+	color: #666;
+	background: #FFF;
+	width: 17em;
+	border: 1px solid #7EC0EE
+}
+.submit input
+{
+	color: #000;
+	background: #ffa20f;
+	border: 2px outset #d7b9c9
+} 
+
+.container {
+	width: 960px;
+	/*background: #FFF;*/
+	margin: 0 auto;
+}
+
+.header {
+	/*background: #ADB96E;*/	
+	padding-bottom: 10px;
+}
+
+
+/* MAIN NAVIGATION BAR CSS */
+#navcontainer
+{
+	margin: 0 auto;
+	padding: 0 0 0 0;
+}
+
+/* to stretch the container div to contain floated list */
+#navcontainer:after
+{
+	content: ".";
+	display: block;
+	line-height: 0px;
+	font-size: 0px;
+	clear: both;
+}
+
+ul#navlist
+{
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+	font-size: 1.0em;
+}
+
+ul#navlist li#activeli
+{
+	display: block;
+	float: left;
+	width: 20%;
+	margin: 0;
+	padding: 0;
+}
+
+ul#navlist li#disableli
+{
+	display: block;
+	float: left;
+	width: 20%;
+	margin: 0;
+	padding: 0;
+	color:#C0C0C0;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+ul#navlist li a
+{
+	display: block;
+	width: 100%;
+	padding: 0.5em;
+}
+
+#navcontainer>ul#navlist li a { width: auto; }
+/* End Navigation Bar */
+
+
+/* Side Bar CSS */
+.sidebar {
+	float: right;
+	width: 325px;
+	min-height: 475px;
+	/*background: #EADCAE;*/
+	padding-bottom: 10px;
+	padding-top: 0px;
+	border-left: solid;
+	border-left-width: 5px;
+	border-left-color: #7EC0EE;
+}
+
+.SideBarHeader {
+	float:left;
+	padding-bottom: 0x;
+	padding-top: 10px;
+	width:305px;
+	border: solid;
+	border-color: #FFF;
+	border-width: 10px;
+	background: #7EC0EE;	
+}
+
+.lrdiscoverwidget .site{
+	max-width: 305px !important;
+	min-height: 300px;
+}
+
+.lrdiscoverwidget .inviteform .field{
+	width:220px !important;
+	margin: 0pt 4px 0pt 4px !important;
+}
+
+.lrdiscoverwidget .inviteform label{
+	color: #666;
+	width: 305px;
+	font-size: 14px;
+	text-shadow: none;
+	text-align:left;	
+}
+
+.like{
+	width: 305px !important;
+	text-align:center;	
+}
+
+
+.share-via-email{
+	width: 267px !important;
+	margin: 15px 0px 5px 0px !important;
+}
+
+.lrdiscoverwidget .share-via-email label{
+	width: 267px;
+	padding: 5pt 0pt 5pt 5pt !important;
+}
+
+
+.dark-d{
+	text-shadow:none !important;
+}
+
+
+/* End Side Bar CSS */
+
+.content {
+	padding: 10px 0;
+	width: 630px;
+	float: left;
+}
+.footer {
+	padding: 10px 0;
+	/*background: #CCC49F;*/
+	position: relative;
+	clear: both; 
+}
+.fltrt {  
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { 
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { 
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
